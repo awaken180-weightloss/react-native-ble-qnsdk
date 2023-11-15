@@ -422,10 +422,10 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
                 sendEventToJS("uploadProgress", params);
             }
 
-            @Override
-            public void onGetStoredScale(QNBleDevice device, List<QNScaleStoreData> storedDataList) {
-                Log.d("Yolanda onGetStordScale", String.valueOf(storedDataList));
-            }
+            // @Override
+            // public void onGetStoredScale(QNBleDevice device, List<QNScaleStoreData> storedDataList) {
+            //     Log.d("Yolanda onGetStordScale", String.valueOf(storedDataList));
+            // }
 
             @Override
             public void onGetElectric(QNBleDevice device, int electric) {
