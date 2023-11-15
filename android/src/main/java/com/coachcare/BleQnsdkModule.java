@@ -35,6 +35,7 @@ import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import com.qn.device.listener.QNBleConnectionChangeListener;
 
@@ -422,10 +423,10 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
                 sendEventToJS("uploadProgress", params);
             }
 
-            // @Override
-            // public void onGetStoredScale(QNBleDevice device, List<QNScaleStoreData> storedDataList) {
-            //     Log.d("Yolanda onGetStordScale", String.valueOf(storedDataList));
-            // }
+            @Override
+            public void onGetStoredScale(QNBleDevice device, List<QNScaleStoreData> storedDataList) {
+                Log.d("Yolanda onGetStordScale", String.valueOf(storedDataList));
+            }
 
             @Override
             public void onGetElectric(QNBleDevice device, int electric) {
