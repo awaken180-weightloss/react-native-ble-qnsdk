@@ -94,8 +94,8 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
 
     public void initSDK() {
         try {
-            InputStream encryptPath = reactContext.getAssets().open("awaken180YolandoTestSdk.qn");
-            mQNBleApi.initSdk("123456789", encryptPath.toString(), new QNResultCallback() {
+            String encryptPath = "file:///android_asset/awaken180YolandoTestSdk.qn";
+            mQNBleApi.initSdk("123456789", encryptPath, new QNResultCallback() {
             @Override
             public void onResult(int code, String msg) {
                 Log.d("Yolanda Scale", "Initialization file\n" + msg);
