@@ -93,7 +93,6 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
     }
 
     public void initSDK() {
-        try {
             String encryptPath = "file:///android_asset/awaken180YolandoTestSdk.qn";
             mQNBleApi.initSdk("123456789", encryptPath, new QNResultCallback() {
             @Override
@@ -102,10 +101,7 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
                 Log.d("Yolanda Scale", "Initialization code\n" + code);
             }
         });
-        } catch (IOException e) {
-            // Handle the exception
-            e.printStackTrace();
-        }
+
     }
 
     @Override
