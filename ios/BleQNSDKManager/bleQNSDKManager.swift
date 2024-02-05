@@ -25,9 +25,9 @@ public class BleQnsdk: RCTEventEmitter  {
 
         let podBundle = Bundle(for: BleQnsdk.self)
 
-        if let fileURL = podBundle.url(forResource: "awaken180YolandoTestSdk", withExtension: "qn") {
+        if let fileURL = podBundle.url(forResource: "Awaken202401", withExtension: "qn") {
             let filePath = fileURL.path
-            bleApi.initSdk("123456789", firstDataFile: filePath, callback: { error in
+            bleApi.initSdk("Awaken202401", firstDataFile: filePath, callback: { error in
                 // Handle the callback
                 self.bleApi.discoveryListener = self
                 self.bleApi.connectionChangeListener = self

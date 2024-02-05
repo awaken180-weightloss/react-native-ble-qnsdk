@@ -25,7 +25,8 @@ Pod::Spec.new do |s|
   s.source_files = "ios/**/*.{h,m,swift}"
   s.requires_arc = true
 
-  s.resources = 'src/assets/awaken180YolandoTestSdk.qn'
+  # s.resources = 'src/assets/awaken180YolandoTestSdk.qn'
+  s.resources = "src/assets/Awaken202401.qn"
 
   s.dependency "React"
   s.dependency "QNSDK", "2.9.0"
