@@ -55,12 +55,17 @@ function fetchConnectedDeviceInfo(): void {
   return BleQnsdk.fetchConnectedDeviceInfo();
 }
 
+function disconnectDevice(): Promise<void> {
+  return BleQnsdk.disconnectDevice();
+}
+
 export {
   BleQnsdk,
   buildYolandaUser,
   startYolandaScan,
   stopYolandaScan,
   fetchConnectedDeviceInfo,
+  disconnectDevice,
   IYolandaUser,
   YolandaDeviceInfo,
   TemporaryMeasurementResponse,

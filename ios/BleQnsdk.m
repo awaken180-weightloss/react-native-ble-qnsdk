@@ -12,6 +12,7 @@ RCT_EXTERN_METHOD(onStartDiscovery:(RCTPromiseResolveBlock)resolve
 RCT_EXTERN_METHOD(onStopDiscovery:(RCTPromiseResolveBlock)resolve
                   rejecter: (RCTPromiseRejectBlock)reject)
 RCT_EXTERN_METHOD(fetchConnectedDeviceInfo)
+RCT_EXTERN_METHOD(disconnectDevice)
 
 - (dispatch_queue_t)methodQueue
 {

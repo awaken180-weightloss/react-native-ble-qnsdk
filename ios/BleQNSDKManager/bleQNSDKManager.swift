@@ -104,6 +104,17 @@ public class BleQnsdk: RCTEventEmitter  {
     func fetchConnectedDeviceInfo() {
         sendConnectedDeviceInfo()
     }
+
+    @objc
+    func disconnectDevice() {
+        self.bleApi.disconnectDevice(self.device) { (error) in
+            if let error = error {
+                print("Error occurred during disconnection: \(error)")
+            } else {
+                print("Device disconnected successfully")
+            }
+        }
+    }
     
     func getDeviceInfo(device: QNBleDevice!) -> [String : Any] {
         return [
