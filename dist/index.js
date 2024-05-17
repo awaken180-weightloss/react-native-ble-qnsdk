@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.YolandaEventTypeEnum = exports.fetchConnectedDeviceInfo = exports.stopYolandaScan = exports.startYolandaScan = exports.buildYolandaUser = exports.BleQnsdk = void 0;
+exports.YolandaEventTypeEnum = exports.disconnectDevice = exports.fetchConnectedDeviceInfo = exports.stopYolandaScan = exports.startYolandaScan = exports.buildYolandaUser = exports.BleQnsdk = void 0;
 const types_1 = require("./types");
 Object.defineProperty(exports, "YolandaEventTypeEnum", { enumerable: true, get: function () { return types_1.YolandaEventTypeEnum; } });
 const react_native_1 = require("react-native");
@@ -32,3 +32,7 @@ function fetchConnectedDeviceInfo() {
     return BleQnsdk.fetchConnectedDeviceInfo();
 }
 exports.fetchConnectedDeviceInfo = fetchConnectedDeviceInfo;
+function disconnectDevice() {
+    return BleQnsdk.disconnectDevice();
+}
+exports.disconnectDevice = disconnectDevice;
