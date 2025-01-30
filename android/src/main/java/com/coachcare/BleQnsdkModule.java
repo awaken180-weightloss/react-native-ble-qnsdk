@@ -462,6 +462,11 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
                 Log.d("Yolanda readSnComplete", String.valueOf(qnBleDevice));
             }
 
+            @Override
+            public void onGetBleVer(QNBleDevice qnBleDevice, int i) {
+
+            }
+
         });
     }
 
