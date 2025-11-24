@@ -467,6 +467,26 @@ public class BleQnsdkModule extends ReactContextBaseJavaModule implements Lifecy
 
             }
 
+            @Override
+            public void onGetBatteryLevel(QNBleDevice qnBleDevice, int i, boolean b) {
+
+            }
+
+            @Override
+            public void onGetBarCode(String s, String s1) {
+
+            }
+
+            @Override
+            public void onGetBarCodeFail(String s) {
+
+            }
+
+            @Override
+            public void onGetBarCodeGunState(String s, boolean b) {
+
+            }
+
         });
     }
 
