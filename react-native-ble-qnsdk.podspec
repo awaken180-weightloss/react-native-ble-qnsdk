@@ -29,5 +29,5 @@ Pod::Spec.new do |s|
   s.resources = "src/assets/Awaken202401.qn"
 
   s.dependency "React"
-  s.dependency "QNSDK", "2.9.0"
+  s.dependency "QNSDK", "2.32.1"
 end

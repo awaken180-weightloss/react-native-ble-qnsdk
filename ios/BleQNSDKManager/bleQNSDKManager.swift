@@ -86,7 +86,7 @@ public class BleQnsdk: RCTEventEmitter  {
     }
     
     @objc
-    func onStopDiscovery(resolve: @escaping RCTPromiseResolveBlock,
+    func onStopDiscovery(_ resolve: @escaping RCTPromiseResolveBlock,
                          rejecter reject: @escaping RCTPromiseRejectBlock) {
         bleApi.stopBleDeviceDiscorvery { error in
             if let error = error {
@@ -145,7 +145,7 @@ public class BleQnsdk: RCTEventEmitter  {
     
     func connectToDevice() {
         onStopDiscovery(
-            resolve: { _ in
+            { _ in
                 self.startConnection()
             },
             rejecter: { (_, _, _) in
